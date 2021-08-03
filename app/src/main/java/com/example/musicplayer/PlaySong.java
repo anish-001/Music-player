@@ -94,11 +94,11 @@ public class PlaySong extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(mediaPlayer.isPlaying()){
-                    play.setImageResource(R.drawable.play);
+                    play.setImageResource(R.drawable.ic_play);
                     mediaPlayer.pause();
                 }
                 else{
-                    play.setImageResource(R.drawable.pause);
+                    play.setImageResource(R.drawable.ic_pause);
                     mediaPlayer.start();
                 }
 
@@ -119,7 +119,7 @@ public class PlaySong extends AppCompatActivity {
                 Uri uri = Uri.parse(songs.get(position).toString());
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
                 mediaPlayer.start();
-                play.setImageResource(R.drawable.pause);
+                play.setImageResource(R.drawable.ic_pause);
                 seekBar.setMax(mediaPlayer.getDuration());
                 textContent = songs.get(position).getName().toString();
                 textView.setText(textContent);
@@ -140,7 +140,7 @@ public class PlaySong extends AppCompatActivity {
                 Uri uri = Uri.parse(songs.get(position).toString());
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
                 mediaPlayer.start();
-                play.setImageResource(R.drawable.pause);
+                play.setImageResource(R.drawable.ic_pause);
                 seekBar.setMax(mediaPlayer.getDuration());
                 textContent = songs.get(position).getName().toString();
                 textView.setText(textContent);

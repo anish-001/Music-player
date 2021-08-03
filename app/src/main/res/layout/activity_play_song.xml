@@ -56,7 +56,7 @@
             android:layout_weight="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/previous" />
+            app:srcCompat="@drawable/ic_previous" />
 
         <ImageView
             android:id="@+id/play"
@@ -65,14 +65,14 @@
             android:layout_weight="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/pause" />
+            app:srcCompat="@drawable/ic_pause" />
 
         <ImageView
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="122dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/next" />
+            app:srcCompat="@drawable/ic_next" />
     </LinearLayout>
 
     <SeekBar
